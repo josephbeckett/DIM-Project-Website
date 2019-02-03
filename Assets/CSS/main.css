@@ -55,7 +55,7 @@ body {
 .index-title-section {
     background-image: url('../Img/index-title-image2.png');
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -86,7 +86,7 @@ body {
 .index-section-1 {
     background-image: url('../Img/index-title-image.jpg');
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -99,10 +99,15 @@ body {
     height: 100%;
 }
 
+.fadeInDownBig {
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
 .arrowscroller {
     display: flex;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
     align-content: center;
     position: absolute;
     bottom: 10px;
