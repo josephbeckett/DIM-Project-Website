@@ -15,8 +15,8 @@ body {
 
 /* Add a black background color to the top navigation */
 .section-nav {
-    background-color: rgba(0, 0, 0, 0.79);
-    border-color: rgba(0, 0, 0, 0.79);
+    background-color: rgba(0, 0, 0, 0.70);
+    border-color: rgba(0, 0, 0, 0.70);
     overflow: hidden;
     position: fixed;
     text-align: center;
@@ -131,9 +131,9 @@ body {
     position: absolute;
     bottom: 10px;
     cursor: pointer;
-    font-size: 75px;
     text-align: center;
     z-index: 10;
+    padding-bottom: 30px;
 }
 
 .arrowscroller i {
@@ -141,20 +141,32 @@ body {
     width: 100%;
     text-align: center;
     color: white;
+    font-size: 60px;
 }
 
 .index-section-buttons {
-    background-color: rgb(0, 0, 0, 0.00);
-    border: 2px solid rgb(0, 0, 0, 0.79);
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid rgb(0, 0, 0, 0.70);
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.index-section-buttons:hover {
+    background-color: rgb(0, 0, 0, 0.70);
+    border: 2px solid rgb(0, 0, 0, 0);
 }
 
 .index-section-button-wrapper {
     top: 60%;
     left: 50%;
 }
+
+
+.hvr-underline-from-center:before {
+    background: #fff!important;
+} 

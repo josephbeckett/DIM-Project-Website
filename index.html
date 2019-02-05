@@ -7,10 +7,10 @@
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../favicon.ico"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
-    <link href="Assets/CSS/hover-min.css" rel="stylesheet"/>
+    <link href="Assets/CSS/hover.css" rel="stylesheet"/>
     <link rel="stylesheet" href="Assets/CSS/animate.min.css"/>
     <script src="Assets/JS/main.js"></script>
 </head>
@@ -19,10 +19,10 @@
     <!-- Navbar -->
     <div class="section-nav" id="section-nav">
         <div class="section-nav-wrapper">
-            <a class="hvr-reveal" href="index.html">Home</a>
-            <a class="hvr-reveal" href="globalwarming.html">Global Warming</a>
-            <a class="hvr-reveal" href="animalextinction.hml">Animal Extinction</a>
-            <a class="hvr-reveal" href="usefullinks.html">Useful Links</a>
+            <a class="hvr-underline-from-center" href="index.html">Home</a>
+            <a class="hvr-underline-from-center" href="globalwarming.html">Global Warming</a>
+            <a class="hvr-underline-from-center" href="animalextinction.hml">Animal Extinction</a>
+            <a class="hvr-underline-from-center" href="usefullinks.html">Useful Links</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -35,26 +35,32 @@
         <div class="index-content animated fadeInDown">
             <h1 class="index-title-section-text">The <span class="thin">Human Component</span></h1>
         </div>
-        <a class="arrowscroller hvr-sink" href="#index-section-1"><i class="fas fa-angle-down"></i></a>
+        <a class="arrowscroller hvr-sink" href="#index-section-1"><i class="material-icons">
+            keyboard_arrow_down
+        </i></a>
     </div>
 
     <!-- Section 1 of index page -->
     <div id="index-section-1" class="index-section-1">
         <div class="index-content">
             <h1 class="title-section-text">The Human Causes of <span class="thin"> <br> Climate Change</span><br>
-                <button class="index-section-buttons animated hvr-reveal">Learn More</button>
+                <button class="index-section-buttons">Learn More</button>
             </h1>
         </div>
-        <a class="arrowscroller uparrow hvr-float" href="#index-section-2"><i class="fas fa-angle-down"></i></a>
+        <a class="arrowscroller uparrow hvr-float" href="#index-section-2"><i class="material-icons">
+            keyboard_arrow_down
+        </i></a>
     </div>
     <!-- Section 1 of index page -->
     <div id="index-section-2" class="index-section-2">
         <div class="index-content">
             <h1 class="title-section-text">The Human Timeline of<span class="thin"> <br> Climate Change</span><br>
-                <button class="index-section-buttons animated hvr-reveal">Learn More</button>
+                <button class="index-section-buttons">Learn More</button>
             </h1>
+            <a class="arrowscroller uparrow hvr-float" href="#title-section"><i class="material-icons">
+                keyboard_arrow_up
+            </i></a>
         </div>
-        <a class="arrowscroller uparrow hvr-float" href="#title-section"><i class="fas fa-angle-up"></i></a>
     </div>
 </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
