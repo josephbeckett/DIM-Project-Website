@@ -307,3 +307,52 @@ body {
     background-size: cover;
     z-index: 0;
 }
+
+.usefullinks-title-section {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.usefullinks-title-section-text {
+    font-family: 'Raleway';
+    color: #000000;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.usefullinks-content {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.Usefullinks-table {
+    padding: 30px;
+}
+
+.Usefullinks-logos {
+    width: 200px;
+    transition: 0.3s;
+}
+
+.Usefullinks-logos:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.8));
+}
