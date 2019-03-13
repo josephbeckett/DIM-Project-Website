@@ -49,6 +49,38 @@ body {
 .section-nav-wrapper {
     text-align: center;
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+@media all and (max-width: 800px) {
+    .section-nav-wrapper {
+        justify-content: space-around;
+    }
+    .title-section-text {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .section-nav-wrapper {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .section-nav-wrapper a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
 }
 
 /* Index Page Title Section */
@@ -326,26 +358,9 @@ body {
     word-wrap: break-word;
     
 }
-
-.usefullinks-title-section {
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-}
-
 .usefullinks-title-section-text {
     font-family: 'Raleway';
     color: #000000;
-    position: absolute;
-    text-align: center;
-    top: 20%;
-    left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     font-size: 48px;
@@ -356,20 +371,38 @@ body {
 .usefullinks-content {
     position: absolute;
     text-align: center;
+    height: 100%;
+    width: 100%;
     top: 60%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
 }
 
-.Usefullinks-table {
-    width: 800px
+.Usefullinks-table-row {
+    display: flex;
+    padding: 70px;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .Usefullinks-table-data {
     padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.Usefullinks-logo-captions {
+    color: #000000;
+    font-size: 20px;
 }
 
 .Usefullinks-logos {
