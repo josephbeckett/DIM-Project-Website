@@ -1,23 +1,16 @@
-var url = "https://api.nasa.gov/planetary/apod?api_key=pnWC06tufkx61V2naW1PgeqGxSOMlItGKDitdbG4";
-$.ajax({
-    url: url,
-    success: function (result) {
-        if ("copyright" in result) {
-            $("#copyright").text("Image Credits: " + result.copyright);
-        } else {
-            $("#copyright").text("Image Credits: " + "Public Domain");
-        }
+var req = new XMLHttpRequest();
+var url = "https://api.nasa.gov/planetary/apod?api_key=";
+var api_key = "pnWC06tufkx61V2naW1PgeqGxSOMlItGKDitdbG4";
 
-        if (result.media_type == "video") {
-            $("#apod_img_id").css("display", "none");
-            $("#apod_vid_id").attr("src", result.url);
-        } else {
-            $("#apod_vid_id").css("display", "none");
-            $("#apod_img_id").attr("src", result.url);
-        }
-        $("#reqObject").text(url);
-        $("#returnObject").text(JSON.stringify(result, null, 4));
-        $("#apod_explaination").text(result.explanation);
-        $("#apod_title").text(result.title);
+req.open("GET", url + api_key);
+req.send();
+
+req.addEventListener("load", function () {
+    if (req.status == 200 && req.readyState == 4) {
+        var response = JSON.parse(req.responseText);
+        document.getElementById("title").textContent = response.title;
+        document.getElementById("date").textContent = response.date;
+        document.getElementById("pic").src = response.hdurl;
+        document.getElementById("explanation").textContent = response.explanation;
     }
-});
+})
