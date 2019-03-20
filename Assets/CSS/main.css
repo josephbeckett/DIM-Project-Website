@@ -18,9 +18,14 @@ body {
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0, 0.8)!important;
+    background-color: rgb(0, 0, 0, 1);
     transition: all 500ms ease;
     font-family: 'Raleway';
+}
+
+.navbar-collapse {
+    justify-content: center;
+    transition: all 500ms ease;
 }
 
 .navbar-logo {
@@ -30,9 +35,20 @@ body {
 
 .nav-link {
     font-size: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
     transition: all 500ms ease;
+    color: rgb(255, 255, 255)!important;
+}
+
+.nav-link:hover {
+    color: rgb(76, 0, 255)!important;
+}
+
+.logo-text {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    transition: all 500ms ease;
+    margin-left: 10px;
+    padding-top: 10px;
 }
 
 /* Index Page Title Section */
@@ -287,7 +303,7 @@ body {
 /* Animal Extinction Page CSS */
 
 .animalextinction-title-section {
-    background-image: url('../Img/animalextinction-title-image.jpeg');
+    background-image: url('../Img/Holocene-extinction-title-image.jpg');
     height: 100vh;
     width: 100%;
     position: relative;
@@ -299,26 +315,44 @@ body {
 }
 
 .ClimateChart-content {
-    position: absolute;
-    text-align: center;
-    height: 100vh;
+    display: flex;
     width: 100%;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
+    height: 100%;
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.climatechart-header, .climatechart-subheader, .climatechart-date, .climatechart-explanation {
+    color: rgb(255, 255, 255);
 }
 
 .ClimateChart-content-text {
-    color: #000000;
-    position: absolute;
+    margin: 100px;
     text-align: center;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-    font-size: 20px;
-    letter-spacing: 0.1em;
+    font-size: 18px;
+}
+
+.climatechart-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.climatechart-subheader {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.climatechart-date {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.climatechart-explanation {
+    margin-top: 30px;
+}
+
+.climatechart-image {
+    width: 600px;
 }
     
 .usefullinks-title-section-text {
