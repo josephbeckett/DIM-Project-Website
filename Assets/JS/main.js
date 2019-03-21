@@ -20,7 +20,7 @@ $(document).ready(function () {
       $(".navbar-logo").css("height", "50px")
       $(".nav-link").css("font-size", "24px")
       $(".logo-text").css("font-size", "24px")
-      $(".navbar").css("background-color", "rgb(0, 0, 0, 1)"); 
+      $(".navbar").css("background-color", "grey"); 
       $(".nav-link").css("color", "rgba(0, 0, 0, 0.8)")
     }
   })
