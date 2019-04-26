@@ -215,7 +215,7 @@ body {
 }
 
 .globalwarming-section-2 {
-    background-image: url('../Img/globalwarming-section-2.jpeg');
+    background-image: url('../Img/globalwarming-section-4.jpg');
     height: 100vh;
     width: 100%;
     position: relative;
@@ -226,6 +226,17 @@ body {
 }
 
 .globalwarming-section-3 {
+    background-color: gray;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.globalwarming-section-4 {
     background-image: url('../Img/globalwarming-section-3.jpeg');
     height: 100vh;
     width: 100%;
@@ -364,6 +375,18 @@ body {
 
 .climatechart-image {
     width: 600px;
+}
+
+.ClimateChart-section-buttons {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(216, 190, 190, 0.7);
+    color: rgb(128, 63, 63);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
 }
     
 .usefullinks-title-section-text {
