@@ -11,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/main.css" />
     <link href="Assets/CSS/hover.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link rel="stylesheet" href="Assets/CSS/animate.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -48,12 +48,17 @@
 
     <div id="title-section" class="ClimateChart-content">
         <div class="chart-container">
-            <canvas class="chart-canvas" id="myChart" width="400" height="400"></canvas>
+            <div class="chart" id="PPMChart" width="100vw"></d>
+        </div>
+        <div class="chart-container">
+            <div class="chart" id="ATTCChart" width="100vw"></d>
+        </div>
+        <div class="chart-container">
+            <div class="chart" id="charttest" width="100vw"></d>
         </div>
     </div>
 
-<script src="Assets/JS/scripts.js"></script>
-<script rel="stylesheet" href="Assets/JS/Chart.js"></script>
+<script rel="stylesheet" href="Assets/JS/apexcharts.min.js"></script>
 <script src="Assets/JS/climatechart.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
